@@ -16,6 +16,8 @@
 
 apply plugin: 'com.android.application'
 
+apply plugin: 'androidx.navigation.safeargs'
+
 apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-kapt'
@@ -60,4 +62,5 @@ dependencies {
     implementation"android.arch.navigation:navigation-fragment-ktx:$navigationVersion"
     implementation "android.arch.navigation:navigation-ui-ktx:$navigationVersion"
     implementation "com.google.android.material:material:$supportlibVersion"
+    classpath "android.arch.navigation:navigation-safe-args-gradle-plugin:$navigationVersion"
 }
